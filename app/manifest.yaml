@@ -35,7 +35,7 @@ spec:
 
 --- 
 apiVersion: networking.k8s.io/v1
-kind: Ingress 
+kind: Ingress
 metadata: 
   name: app1 
   annotations:
@@ -44,7 +44,7 @@ metadata:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:268836234542:certificate/9cf598d1-ed3d-40e4-b7e1-2e2bfb6b7cbb
     alb.ingress.kubernetes.io/group.name: joindevops
-sepc: 
+spec:
   ingressClassName: alb 
   rules: 
   - host: "app1.tridev.online"
