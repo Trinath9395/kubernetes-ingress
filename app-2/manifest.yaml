@@ -47,7 +47,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: "app1.tridev.online"
+  - host: "app2.tridev.online"
     http:
       paths:
       - pathType: Prefix
